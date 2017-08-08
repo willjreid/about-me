@@ -1,6 +1,16 @@
 'use strict';
 
-var shirtSize = prompt('What is your shirt size? (Small/Medium/Large/Extra Large)');
-console.log('Q: What is your shirt size?');
-alert('I hope that CodeFellows has a ' + shirtSize + ' grey shirt for you!');
-console.log('A: ' + shirtSize);
+var q1 = 'Is Will taller than you? -- Please answer "YES" or "NO" ';
+var isTaller = prompt.toUpperCase(q1);
+console.log('Q: ' + q1);
+if (isTaller == 'YES' || isTaller == 'Y') {
+  alert('Yes, there is a 99+% chance he is taller than you.');
+}
+else if (isTaller == 'NO' || isTaller == 'N') {
+  alert('Really? If that\'s the case, there is a spot on a local basketball team for you!');
+}
+else (isTaller != 'YES' && isTaller != 'Y' && isTaller != 'NO' && isTaller != 'N')
+{
+  alert('You probably didn\'t answer the question properly--please refresh and try again.');
+}
+console.log('A: ' + isTaller);
