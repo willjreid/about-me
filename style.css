@@ -19,3 +19,6 @@ p {
 #answer {
   font-style: italic;
 }
+div {
+  border-color: black;
+}
