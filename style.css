@@ -1,3 +1,8 @@
+header {
+  text-align: center;
+  font-size: 25px;
+}
+
 #truth {
   font-size: 20px;
   font-family: cursive;
@@ -5,11 +10,12 @@
 h1 {
   font-size: 18px;
   font-family: serif;
+  text-align: center;
 }
 p {
   font-size: 12px;
   font-family: sans-serif;
 }
-answer {
+#answer {
   font-style: italic;
 }
