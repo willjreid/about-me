@@ -1,12 +1,11 @@
 'use strict';
 
-
 var q1 = 'Is Will taller than you? -- Please answer YES or NO';
 var q2 = 'Is Will a father of three?';
 var q3 = 'Does Will have any tattoos?';
 var q4 = 'Are burritos Will\'s favorite food?';
 var q5 = 'Is Will from Seattle?';
-/*
+
 var isTaller = prompt(q1).toUpperCase();
 console.log('Q: ' + q1);
 if (isTaller == 'YES' || isTaller == 'Y') {
@@ -76,4 +75,3 @@ else if (fromSeattle != 'YES' && fromSeattle != 'NO' && fromSeattle != 'N' && fr
   alert('You probably didn\'t answer the question properly--please refresh and try again.');
 };
 console.log('A: ' + fromSeattle);
-*/

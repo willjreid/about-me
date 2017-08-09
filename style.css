@@ -12,7 +12,6 @@ header {
   z-index: -1;
   opacity: 0.4;
 }
-
 #truth {
   font-size: 25px;
   font-family: cursive;
@@ -51,4 +50,8 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+.red {
+  color: red;
+  font-weight: 150%;
 }
