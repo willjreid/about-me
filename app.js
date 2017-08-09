@@ -1,5 +1,6 @@
 'use strict';
-
+//declare questions and arrays
+var q0 = 'Hello. Welcome to a Q&A game about Will J. Reid. To begin, please enter your name.';
 var q1 = 'Is Will taller than you? -- Please answer YES or NO';
 var q2 = 'Is Will a father of three?';
 var q3 = 'Does Will have any tattoos?';
@@ -9,11 +10,16 @@ var q6 = 'In what year was Will born?';
 var q7 = 'Who is Will\'s favorite member of the Sounders FC? -- Please enter player\'s last name';
 var validAnswers = ['YES', 'Y', 'NO', 'N'];
 var validPlayers = ['Dempsey', 'Deuce', 'Morris', 'Frei', 'Torres', 'Evans'];
+var correct = 0;
 
+//begin promts and alerts for 7 questions
+/*var guestName = prompt(q0);
+console.log('Guest\'s name: ' + guestName);
 var isTaller = prompt(q1);
 console.log('Q: ' + q1);
 if (isTaller.toUpperCase() === 'YES' || isTaller.toUpperCase() === 'Y') {
   alert('Yes, there is a 99+% chance he is taller than you.');
+  correct++;
 }
 else if (isTaller.toUpperCase() === 'NO' || isTaller.toUpperCase() === 'N') {
   alert('Really? If that\'s the case, there is a spot on a local basketball team for you!');
@@ -31,6 +37,7 @@ if (isFather.toUpperCase() === 'YES' || isFather.toUpperCase() === 'Y') {
 }
 else if (isFather.toUpperCase() === 'NO' || isFather.toUpperCase() === 'N') {
   alert('Right! Will is the proud father of two children.');
+  correct++;
 }
 else if (validAnswers.includes(isFather.toUpperCase()) !== true)
 {
@@ -45,6 +52,7 @@ if (hasTattoo.toUpperCase() === 'YES' || hasTattoo.toUpperCase() === 'Y') {
 }
 else if (hasTattoo.toUpperCase() === 'NO' || hasTattoo.toUpperCase() === 'N') {
   alert('Correct! Will is thinking about a boss wave tattoo but he hasn\'t been inked yet.');
+  correct++;
 }
 else if (validAnswers.includes(hasTattoo.toUpperCase()) !== true)
 {
@@ -56,6 +64,7 @@ var lovesBurritos = prompt(q4);
 console.log('Q: ' + q4);
 if (lovesBurritos.toUpperCase() === 'YES' || lovesBurritos.toUpperCase() === 'Y') {
   alert('Of course! Will loves burritos!');
+  correct++;
 }
 else if (lovesBurritos.toUpperCase() === 'NO' || lovesBurritos.toUpperCase() === 'N') {
   alert('Trick question! Will loves all forms of sustinance!');
@@ -73,9 +82,46 @@ if (fromSeattle.toUpperCase() === 'YES' || fromSeattle.toUpperCase() === 'Y') {
 }
 else if (fromSeattle.toUpperCase() === 'NO' || fromSeattle.toUpperCase() === 'N') {
   alert('Will has been here 5.5 years, and he no longer owns an umbrella, so he feels like a native.');
+  correct++;
 }
 else if (validAnswers.includes(fromSeattle.toUpperCase()) !== true)
 {
   alert('You probably didn\'t answer the question properly--please refresh and try again.');
 };
+console.log('A: ' + fromSeattle); */
+
+//sixth question, numbers
+var attempts6 = 0;
+var yearBorn = prompt(q6);
+console.log('Q: ' + q5);
+while (attempts6 < 4) {
+  if (yearBorn < 1982) {
+    prompt('Too old, please try again.');
+    attempts6++;
+  }
+  else if (yearBorn > 1982) {
+    prompt('Too young, please try again.');
+    attempts6++;
+  }
+  else if (isNaN(yearBorn)) {
+    prompt('You probably didn\'t answer the question properly--please refresh and try again.');
+    attempts6++;
+  }
+  else {
+    alert('Correct, Will was born in 1982!');
+    break;
+  }
+};
 console.log('A: ' + fromSeattle);
+
+//tabulate the results and share with the guestName
+if (correct < 4) {
+  alert('Thanks for playing ' + guestName + '. You got ' + correct + ' questions right out of 7. Please catch up with Will over a cup of coffee, then try again.');
+}
+else if (4 <= correct && 7 > correct) {
+  alert('Thanks for playing ' + guestName + '. You got ' + correct + ' questions right out of 7. You are becomming quite the Will afficionado. Please try again.');
+}
+else if (7 === correct) {
+  alert(guestName + ', you must really know Will. You got ' + correct + ' questions right out of 7. Will should buy you a beer!');
+}
+console.log('Total score: ' + correct + ' out of 7.');
