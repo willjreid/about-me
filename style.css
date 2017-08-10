@@ -1,3 +1,7 @@
+* {
+  font-family: garamond;
+  font-size: 15;
+}
 header {
   text-align: center;
   font-size: 30px;
@@ -35,6 +39,7 @@ p {
 }
 .answer {
   font-style: italic;
+  margin: 1%;
 }
 div {
   width: 50%;
@@ -44,7 +49,7 @@ div {
 
 }
 .detail {
-  position: relative;
+  position: float left;
 }
 img {
   padding-top: 10px;
@@ -55,4 +60,34 @@ img {
 .red {
   color: red;
   font-weight: 150%;
+}
+h3 {
+  font-size: 22px;
+  font-weight: 550;
+}
+aside {
+  width: 18%;
+  border: 2px inset grey;
+  float: left;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 1% .5% 1% 2%;
+  margin: 1%;
+  position: relative;
+}
+.date {
+  font-style: italic;
+}
+.role {
+  font-weight: 75%;
+}
+ul li {
+  list-style-type: disc;
+  margin: 3%;
+}
+ol li {
+  list-style-type: decimal;
+  margin: 3%;
+}
+aside.right {
+  float: right;
 }

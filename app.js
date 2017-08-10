@@ -11,7 +11,7 @@ var q7 = 'Who is Will\'s favorite member of the Sounders FC? -- Please enter the
 var validAnswers = ['YES', 'Y', 'NO', 'N'];
 var validPlayers = ['DEMPSEY', 'DEUCE', 'MORRIS', 'FREI', 'TORRES', 'EVANS', 'ALONSO'];
 var correct = 0;
-
+/*
 //begin promts and alerts for 7 questions
 var guestName = prompt(q0);
 console.log('Guest\'s name: ' + guestName);
@@ -148,3 +148,4 @@ else if (7 === correct) {
   alert(guestName + ', you must really know Will. You got ' + correct + ' questions right out of 7. Will should buy you a beer!');
 }
 console.log('Total score: ' + correct + ' out of 7.');
+*/
