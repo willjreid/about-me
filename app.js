@@ -7,15 +7,15 @@ var q3 = 'Does Will have any tattoos?';
 var q4 = 'Are burritos Will\'s favorite food?';
 var q5 = 'Is Will from Seattle?';
 var q6 = 'In what year was Will born?';
-var q7 = 'Who is Will\'s favorite member of the Sounders FC? -- Please enter player\'s last name';
+var q7 = 'Who is Will\'s favorite member of the Sounders FC? -- Please enter the player\'s last name';
 var validAnswers = ['YES', 'Y', 'NO', 'N'];
-var validPlayers = ['DEMPSEY', 'DEUCE', 'MORRIS', 'FREI', 'TORRES', 'EVANS'];
+var validPlayers = ['DEMPSEY', 'DEUCE', 'MORRIS', 'FREI', 'TORRES', 'EVANS', 'ALONSO'];
 var correct = 0;
 
 //begin promts and alerts for 7 questions
 var guestName = prompt(q0);
 console.log('Guest\'s name: ' + guestName);
-/*var isTaller = prompt(q1);
+var isTaller = prompt(q1);
 console.log('Q: ' + q1);
 if (isTaller.toUpperCase() === 'YES' || isTaller.toUpperCase() === 'Y') {
   alert('Yes, there is a 99+% chance he is taller than you.');
@@ -117,25 +117,25 @@ while (attempts6 < 4) {
     break;
   };
 }
-*/
+
 //seventh question, numbers
 var attempts7 = 0;
 var playerLName = prompt(q7);
 console.log('Q: ' + q5);
-while (attempts7 < 6) {
+while (attempts7 < 5) {
   if (validPlayers.includes(playerLName.toUpperCase()) !== true) {
     playerLName = prompt('Nah, he sounds like a Timber.');
-    attempts7++;
     console.log('A: ' + playerLName);
+    attempts7++;
   }
   else {
     alert('Correct, ' + playerLName + ' is a great hero of the Sounders!');
     correct++;
     console.log('A: ' + playerLName);
-    break;
   };
 }
 alert('Just FYI, Will\'s favorite players are: ' + validPlayers.toString() + ' and we can all agree the team is better off without Andy Rose.');
+
 //tabulate the results and share with the guestName
 if (correct < 4) {
   alert('Thanks for playing ' + guestName + '. You got ' + correct + ' questions right out of 7. Please catch up with Will over a cup of coffee, then try again.');
