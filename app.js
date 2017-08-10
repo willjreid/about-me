@@ -132,6 +132,7 @@ while (attempts7 < 5) {
     alert('Correct, ' + playerLName + ' is a great hero of the Sounders!');
     correct++;
     console.log('A: ' + playerLName);
+    break;
   };
 }
 alert('Just FYI, Will\'s favorite players are: ' + validPlayers.toString() + ' and we can all agree the team is better off without Andy Rose.');
