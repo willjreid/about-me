@@ -69,7 +69,7 @@ aside {
   width: 18%;
   border: 2px inset grey;
   float: left;
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.5);
   padding: 1% .5% 1% 2%;
   margin: 1%;
   position: relative;
@@ -78,7 +78,7 @@ aside {
   font-style: italic;
 }
 .role {
-  font-weight: 75%;
+  font-family: times;
 }
 ul li {
   list-style-type: disc;
@@ -90,4 +90,12 @@ ol li {
 }
 aside.right {
   float: right;
+}
+footer {
+  text-align: center;
+  margin: 1%;
+  background-color: rgb (255, 255, 255, .5);
+}
+.company {
+  font-weight: 300;
 }

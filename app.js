@@ -11,7 +11,7 @@ var q7 = 'Who is Will\'s favorite member of the Sounders FC? -- Please enter the
 var validAnswers = ['YES', 'Y', 'NO', 'N'];
 var validPlayers = ['DEMPSEY', 'DEUCE', 'MORRIS', 'FREI', 'TORRES', 'EVANS', 'ALONSO'];
 var correct = 0;
-/*
+
 //begin promts and alerts for 7 questions
 var guestName = prompt(q0);
 console.log('Guest\'s name: ' + guestName);
@@ -90,17 +90,20 @@ else if (validAnswers.includes(fromSeattle.toUpperCase()) !== true)
 };
 console.log('A: ' + fromSeattle);
 
-//sixth question, numbers
+//sixth question, numbers, using a random number assignment for yearBorn
+var randYear = (Math.floor(Math.random() * 10) + 1980);
+console.log('Random Year: ' + randYear);
+
 var attempts6 = 0;
 var yearBorn = prompt(q6);
 console.log('Q: ' + q5);
-while (attempts6 < 4) {
-  if (yearBorn < 1982) {
+while (attempts6 < 3) {
+  if (yearBorn < randYear) {
     yearBorn = prompt('Too old, please try again.');
     attempts6++;
     console.log('A: ' + yearBorn);
   }
-  else if (yearBorn > 1982) {
+  else if (yearBorn > randYear) {
     yearBorn = prompt('Too young, please try again.');
     attempts6++;
     console.log('A: ' + yearBorn);
@@ -111,7 +114,7 @@ while (attempts6 < 4) {
     console.log('A: ' + yearBorn);
   }
   else {
-    alert('Correct, Will was born in 1982!');
+    alert('Correct, Will was born in ' + randYear + '. (He was really born in 1982 but he has implemented a random number generator for yearBorn)');
     correct++;
     console.log('A: ' + yearBorn);
     break;
@@ -124,7 +127,7 @@ var playerLName = prompt(q7);
 console.log('Q: ' + q5);
 while (attempts7 < 5) {
   if (validPlayers.includes(playerLName.toUpperCase()) !== true) {
-    playerLName = prompt('Nah, he sounds like a Timber.');
+    playerLName = prompt('Nah, he sounds like a Timber. Please try again.');
     console.log('A: ' + playerLName);
     attempts7++;
   }
@@ -142,10 +145,9 @@ if (correct < 4) {
   alert('Thanks for playing ' + guestName + '. You got ' + correct + ' questions right out of 7. Please catch up with Will over a cup of coffee, then try again.');
 }
 else if (4 <= correct && 7 > correct) {
-  alert('Thanks for playing ' + guestName + '. You got ' + correct + ' questions right out of 7. You are becomming quite the Will afficionado. Please try again.');
+  alert('Thanks for playing ' + guestName + '. You got ' + correct + ' questions right out of 7. You are becomming quite the Will afficionado. Please try again after having a beer with Will.');
 }
 else if (7 === correct) {
   alert(guestName + ', you must really know Will. You got ' + correct + ' questions right out of 7. Will should buy you a beer!');
 }
 console.log('Total score: ' + correct + ' out of 7.');
-*/
