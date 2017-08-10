@@ -67,7 +67,7 @@ if (lovesBurritos.toUpperCase() === 'YES' || lovesBurritos.toUpperCase() === 'Y'
   correct++;
 }
 else if (lovesBurritos.toUpperCase() === 'NO' || lovesBurritos.toUpperCase() === 'N') {
-  alert('Trick question! Will loves all forms of sustinance!');
+  alert('Trick question! Will loves all forms of sustenance!');
 }
 else if (validAnswers.includes(lovesBurritos.toUpperCase()) !== true)
 {
