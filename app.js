@@ -13,9 +13,9 @@ var validPlayers = ['Dempsey', 'Deuce', 'Morris', 'Frei', 'Torres', 'Evans'];
 var correct = 0;
 
 //begin promts and alerts for 7 questions
-/*var guestName = prompt(q0);
+var guestName = prompt(q0);
 console.log('Guest\'s name: ' + guestName);
-var isTaller = prompt(q1);
+/*var isTaller = prompt(q1);
 console.log('Q: ' + q1);
 if (isTaller.toUpperCase() === 'YES' || isTaller.toUpperCase() === 'Y') {
   alert('Yes, there is a 99+% chance he is taller than you.');
@@ -96,23 +96,26 @@ var yearBorn = prompt(q6);
 console.log('Q: ' + q5);
 while (attempts6 < 4) {
   if (yearBorn < 1982) {
-    prompt('Too old, please try again.');
+    yearBorn = prompt('Too old, please try again.');
     attempts6++;
+    console.log('A: ' + yearBorn);
   }
   else if (yearBorn > 1982) {
-    prompt('Too young, please try again.');
+    yearBorn = prompt('Too young, please try again.');
     attempts6++;
+    console.log('A: ' + yearBorn);
   }
   else if (isNaN(yearBorn)) {
-    prompt('You probably didn\'t answer the question properly--please refresh and try again.');
+    yearBorn = prompt('You probably didn\'t answer the question properly--please refresh and try again.');
     attempts6++;
+    console.log('A: ' + yearBorn);
   }
   else {
     alert('Correct, Will was born in 1982!');
+    console.log('A: ' + yearBorn);
     break;
-  }
-};
-console.log('A: ' + fromSeattle);
+  };
+}
 
 //tabulate the results and share with the guestName
 if (correct < 4) {
